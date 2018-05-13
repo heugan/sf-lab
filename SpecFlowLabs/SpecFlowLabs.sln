@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3.Bindings", "Lab3.Bindi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab4.Specs", "Lab4.Specs\Lab4.Specs.csproj", "{9B30AE61-D182-4299-B61E-5A9A19C481F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUT_MVC", "SUT_MVC\SUT_MVC.csproj", "{2043CFCE-E413-4E97-AA21-5E246EF3A960}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{9B30AE61-D182-4299-B61E-5A9A19C481F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B30AE61-D182-4299-B61E-5A9A19C481F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B30AE61-D182-4299-B61E-5A9A19C481F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2043CFCE-E413-4E97-AA21-5E246EF3A960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2043CFCE-E413-4E97-AA21-5E246EF3A960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2043CFCE-E413-4E97-AA21-5E246EF3A960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2043CFCE-E413-4E97-AA21-5E246EF3A960}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

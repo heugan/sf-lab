@@ -101,6 +101,98 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        public virtual void AdderaTvaTalEnligtTabell(string test_Id, string term1, string term2, string summa, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Addera två tal enligt tabell", exampleTags);
+#line 13
+this.ScenarioSetup(scenarioInfo);
+#line 14
+ testRunner.Given(string.Format("Jag har skrivit in {0} i kalkylatorn", term1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Givet ");
+#line 15
+ testRunner.And(string.Format("Jag har också skrivit in {0} i kalkylatorn", term2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Och ");
+#line 16
+ testRunner.When("Jag klickar på Addera", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "När ");
+#line 17
+ testRunner.Then(string.Format("Ska resultatet bli {0}  på skärmen", summa), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Så ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Addera två tal enligt tabell: nollor")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Kalkylator")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "nollor")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:test-id", "nollor")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:term1", "0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:term2", "0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:summa", "0")]
+        public virtual void AdderaTvaTalEnligtTabell_Nollor()
+        {
+#line 13
+this.AdderaTvaTalEnligtTabell("nollor", "0", "0", "0", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Addera två tal enligt tabell: 0_1_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Kalkylator")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "0_1_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:test-id", "0_1_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:term1", "0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:term2", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:summa", "1")]
+        public virtual void AdderaTvaTalEnligtTabell_0_1_1()
+        {
+#line 13
+this.AdderaTvaTalEnligtTabell("0_1_1", "0", "1", "1", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Addera två tal enligt tabell: 1_0_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Kalkylator")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "1_0_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:test-id", "1_0_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:term1", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:term2", "0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:summa", "1")]
+        public virtual void AdderaTvaTalEnligtTabell_1_0_1()
+        {
+#line 13
+this.AdderaTvaTalEnligtTabell("1_0_1", "1", "0", "1", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Addera två tal enligt tabell: 1_1_2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Kalkylator")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "1_1_2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:test-id", "1_1_2")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:term1", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:term2", "1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:summa", "2")]
+        public virtual void AdderaTvaTalEnligtTabell_1_1_2()
+        {
+#line 13
+this.AdderaTvaTalEnligtTabell("1_1_2", "1", "1", "2", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Addera två tal enligt tabell: negativa")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Kalkylator")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "negativa")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:test-id", "negativa")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:term1", "-10")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:term2", "-20")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:summa", "-30")]
+        public virtual void AdderaTvaTalEnligtTabell_Negativa()
+        {
+#line 13
+this.AdderaTvaTalEnligtTabell("negativa", "-10", "-20", "-30", ((string[])(null)));
+#line hidden
+        }
     }
 }
 #pragma warning restore

@@ -1,0 +1,20 @@
+﻿@model  SUT_MVC.Models.ViewCalculator
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Index", "Default", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.LabelFor(m => m.Term1) @Html.TextBoxFor(x => x.Term1)<br />
+            @Html.LabelFor(m => m.Term2) @Html.TextBoxFor(x => x.Term2)<br />
+
+            @Html.LabelFor(x => x.Sum) @Html.DisplayFor(x => x.Sum) <br />
+        <input type="submit" name="Add" />
+        }
+    </div>
+</body>
+</html>
